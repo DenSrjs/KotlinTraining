@@ -2,17 +2,16 @@ package lesson5
 
 fun main() {
     print("Введите логин: ")
-    val inputLogin: String = readlnOrNull().toString()
+    val inputLogin = readln()
 
-    val loginUser: String = "Batman"
-    val passwordUser: String = "password"
+    val loginUser = "Batman"
+    val passwordUser = "password"
 
-    if (inputLogin == loginUser){
+    if (inputLogin == loginUser) {
         print("Введите пароль: ")
-        when(readlnOrNull().toString()){
+        when (readln()) {
             passwordUser -> println("Добро пожаловать")
             else -> println("Ошибка авторизации")
         }
-    }
-    else println("Вам необходимо зарегистрироваться")
+    } else println("Вам необходимо зарегистрироваться")
 }
